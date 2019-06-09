@@ -1,9 +1,9 @@
 Win10에서 Jekyll을 깔고 GitHub에 블로그 올린 과정에서 벌어진 삽질 기록입니다.
 
 # 세줄요약
-1. Windows 10은 Ubuntu 합시다. [bash]()
+1. Windows 10 말고 WSL Ubuntu로 설치합시다.
 2. Jekyll 관련해서는 StackOverflow나 GitHub Issue보다 에러 메세지를 읽읍시다.
-3. 손 엄청 많이가요, 그냥 네O버, 브X치, 티O토O, 고X트 씁시다.
+3. 기본 설치, jekyll 기동에 대해서만 다룹니다.
 
 ## 준비물
 - Windows 10, Ubuntu Subsystem
@@ -29,8 +29,3 @@ Jekyll 설치 경로에 스페이스가 있습니다.
 ### norigoki 관련 에러
 zlib, xml 어쩌고를 깔아주셔야 합니다. https://github.com/mmistakes/minimal-mistakes/issues/328
 해당 링크가 원인이긴한데 에러메세지를 읽어보시면 뭐가 빠졌는지 나옵니다.
-
-## 앞으로 할 일
-- 테마 손봐야하고...
-- og도 세팅해야하고...
-- 파비콘도 만들어야하고...
