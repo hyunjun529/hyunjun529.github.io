@@ -67,7 +67,7 @@ tags: [개발환경구축, GitHub Pages, Blog]
 - CDN 사용시 빠르면 gif 정도나 zip파일 링크는 그 쪽으로 땡길만 하다!
 - 속도에 이점도 없으면 언제 사라질지 모르는 불안정한 링크를 사용하는 것은 비추
 
-![compare.png](/assets/resource/19-06-15/3.png)
+![compare.png](/assets/resource/19-06-15/3.PNG)
 
 - 결과 1 : 오히려 느리다.
 - 결과 2 : 느리고 제어하기 힘들면 이점이 없다.
