@@ -1,3 +1,10 @@
+---
+layout: post
+title: WSL으로 윈도에서 Jekyll 쓰기
+categories: [개발환경구축]
+tags: [삽질, WSL, Jekyll]
+---
+
 Win10에서 Jekyll을 깔고 GitHub에 블로그 올린 과정에서 벌어진 삽질 기록입니다.
 
 # 세줄요약

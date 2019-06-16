@@ -1,4 +1,11 @@
-# 깃헙 프로파일에 Gist를 쓸 수 있는데 거기에 gif가 들어간다고?
+---
+layout: post
+title: 깃헙 프로필에 Gist를 쓸 수 있는데 거기에 GIF가 된다고?
+categories: [개발환경구축]
+tags: [GIF, ffmpeg, Script, 삽질, GitHub, Gist]
+---
+
+# 깃헙 프로필에 Gist를 쓸 수 있는데 거기에 GIF가 된다고?
 
 이 [링크](https://twitter.com/mathdroid/status/1115372109641814017)를 보자마자 한 눈에 용도를 찾았습니다.
 ![image](https://user-images.githubusercontent.com/7877313/55985243-6d6d0d00-5cda-11e9-9ad8-dd50b8077180.png)
