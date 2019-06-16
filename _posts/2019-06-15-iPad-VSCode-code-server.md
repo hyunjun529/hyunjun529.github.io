@@ -1,8 +1,7 @@
 ---
 layout: post
 title: iPad에서도 VS Code로 코딩하고 싶어!
-categories: [개발환경구축]
-tags: [VS Code, iPad]
+tags: [개발환경구축, VS Code, iPad]
 ---
 
 작성중입니다
@@ -37,24 +36,11 @@ iPad Air 3세대를 이번에 사서 정말 즐겁게 쓰고 있습니다. 특�
 2. 입출력 이벤트
 
 
----
-
-# 레이턴시 체크용, CDN
-
-![1](https://user-images.githubusercontent.com/7877313/59561877-357aa100-9060-11e9-8b46-896da4095f02.png)
-
-<img width="1024" alt="2" src="https://user-images.githubusercontent.com/7877313/59561878-357aa100-9060-11e9-8591-8a16aa603b5f.png">
-
-![m1](https://user-images.githubusercontent.com/7877313/59561879-357aa100-9060-11e9-990a-919f0ca1d3a8.gif)
-
-![m2](https://user-images.githubusercontent.com/7877313/59561880-36133780-9060-11e9-8e99-ddf090e03476.gif)
-
-
 # 레이턴시 체크용, Repo
 
-![1](../assets/resource/19-06-15/1.png)
+![1](/assets/resource/19-06-15/1.png)
 ![2](/assets/resource/19-06-15/2.png)
 ![3](/assets/resource/19-06-15/m1.gif)
-![4]({{site.url}}/assets/resource/19-06-15/m2.gif)
+![4](/assets/resource/19-06-15/m2.gif)
 
 ---

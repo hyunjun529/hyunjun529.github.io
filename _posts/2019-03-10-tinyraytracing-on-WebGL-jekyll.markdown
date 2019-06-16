@@ -1,8 +1,7 @@
 ---
 layout: post
 title: tinyraytracing을 WebGL로 만들어보자
-categories: [3D삽질]
-tags: [JavaScript, RayTracing, 삽질]
+tags: [3D, JavaScript, RayTracing, 삽질]
 ---
 
 # tinyraytracing을 WebGL로 만들어보자
