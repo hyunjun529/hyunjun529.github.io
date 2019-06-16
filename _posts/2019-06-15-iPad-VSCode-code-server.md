@@ -50,9 +50,9 @@ iPad Air 3세대를 이번에 사서 정말 즐겁게 쓰고 있습니다. 특�
 
 # 레이턴시 체크용, Repo
 
-![1](./resource/19-06-15/1.png)
-![2](./resource/19-06-15/2.png)
-![3](./resource/19-06-15/m1.gif)
-![4](./resource/19-06-15/m2.gif)
+![1](../assets/resource/19-06-15/1.png)
+![2](/assets/resource/19-06-15/2.png)
+![3](/assets/resource/19-06-15/m1.gif)
+![4]({{site.url}}/assets/resource/19-06-15/m2.gif)
 
 ---
