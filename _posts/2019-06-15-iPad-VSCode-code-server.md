@@ -16,9 +16,43 @@ iPad Air 3세대를 이번에 사서 정말 즐겁게 쓰고 있습니다. 특�
 
 
 ## 어차피 VS Code도 Electron이면 앱으로 만들 수 있지 않나?
+웹앱으로 만들어서 올리기, 근데 왜 iOS 앱스토어에 VS Code 웹앱이 없을까?
+- 관련 링크 첨부
 
 
 ## Code-Server로 브라우저를 띄워서 접속하면?
-
+- code-server 링크
+- 별이 많은 만큼 이슈가 깨알같다.
+- 왠만한 시행착오는 다 있더라
 
 ## 정말 방법이 없는걸까?
+당장은 없다. **무엇보다 어차피 개발자 도구도 못 쓰는데 이거 왜 하고 있는거지?** 사파리를 Mac에다 연결해서 개발자도구를 띄울 수 있지만 아무리 봐도 괴상한 모양새아닌가[..]
+
+그리고 VS Code에서 에디터는 [모나코 에디터](https://microsoft.github.io/monaco-editor/index.html)라고 하위 프로젝트가 있다. 일반적인, 보통 웹 기반 위지윅 에디터가 그러하듯 보이는 커서가 사실은 평범한 커서가 아니고 텍스트에리어가 텍스트에리어가 아닌 것인데, 이런 자잘한 부분들을 iOS 환경에 맞춰서까지 커스터마이징이 되어 있진 않다~~MS가 왜 Apple을 지원해야하나~~.
+
+### 구체적인 문제 예시
+1. 크기
+2. 입출력 이벤트
+
+
+---
+
+# 레이턴시 체크용, CDN
+
+![1](https://user-images.githubusercontent.com/7877313/59561877-357aa100-9060-11e9-8b46-896da4095f02.png)
+
+<img width="1024" alt="2" src="https://user-images.githubusercontent.com/7877313/59561878-357aa100-9060-11e9-8591-8a16aa603b5f.png">
+
+![m1](https://user-images.githubusercontent.com/7877313/59561879-357aa100-9060-11e9-990a-919f0ca1d3a8.gif)
+
+![m2](https://user-images.githubusercontent.com/7877313/59561880-36133780-9060-11e9-8e99-ddf090e03476.gif)
+
+
+# 레이턴시 체크용, Repo
+
+![1](./resource/19-06-15/1.png)
+![2](./resource/19-06-15/2.png)
+![3](./resource/19-06-15/m1.gif)
+![4](./resource/19-06-15/m2.gif)
+
+---
