@@ -4,13 +4,14 @@ title: GitHub Pages에 대한 여러가지
 tags: [개발환경구축, GitHub Pages, Blog]
 ---
 
-작성중입니다
-
 # GitHub Pages에 대한 여러가지
 텍스트큐브, 워드프레스, 티스토리, 네이버 블로그, 텀블러, 블로거를 거쳐서 결국 다시 GitHub Pages에 Jekyll 기반으로 블로그를 또 해보고 있는데 편한 만큼 뭔가 알아둬야 할 것 같은.. 잘 설명되어 있지 않은 부분들이 있어서 조사하고 정리하는 글
 
+1. Jekyll과 GitHub Pages에 대한 조사
+2. 블로그 운영 방법에 대한 메모
 
-## How to work GitHub Pages
+
+## How to work GitHub Pages (작성중입니다)
 - 공식 문서 링크 + 요약
 
 ### Jekyll on GitHub
@@ -27,25 +28,26 @@ tags: [개발환경구축, GitHub Pages, Blog]
 
 
 ## 관리 방법에 대해서
-1. 백업은 Git만 갖고 다녀도 그 자체로 완전하도록
+1. 백업은 Git만 갖고 다녀도 그 자체로 완전하도록하자
 2. 링크의 영속성, 호스팅이 바뀌어도 유지되도록, 왠만하면 URL은 영어만, 한글이 포함되지 않도록!
 3. 코드나 무거운 컨텐츠 관리는 각각 방법을 세울 것, 자체 Hightlight를 사용할 필요가 있을까?
 
 ### Google Analytics
 - 적당히 붙인다.
-- 자세한 내용은 나중에
+  - https://github.com/hyunjun529/hyunjun529.github.io/blob/master/_includes/google-analytics.html
+  - https://github.com/hyunjun529/hyunjun529.github.io/blob/master/_includes/head.html#L11
+  - 내 경우 jekyll.environment == 'production;를 사용해도 되는데 그냥 jekyll에 의존하고 싶지 않아서 일부러 사용하지 않았다.
+- 이런 추적 기능이 없으면 내 블로그에 누가 어떻게 오는지 확인할 수가 없으니까 꼭 달자.
 - 상술한 링크의 영속성 관점에서 도메인을 바꾸고 관리해야 하는데 귀찮다[..] 나중에
-  - 에드센스 광고를 달려면 해야됨
-  - 에전엔 학교 과제 같은거 올려봐야 네이버 카페나 커뮤니티로 갔는데,
-  - 요즘엔 구글에 치는 사람이 많은지 이상하게 학교과제 시리즈 조회수가 비정상적으로 높음
-  - ~~돈을 벌려면 학교 과제에 관한걸 달자~~
+  - 에드센스 광고도 달아보고 싶다.
+  - 에전엔 학교 과제 같은거 올려봐야 네이버 카페나 커뮤니티로 갔는데 요즘엔 구글에 치는 사람이 많은지 이상하게 학교과제 시리즈 조회수가 비정상적으로 높음 ~~돈을 벌려면 학교 과제에 관한걸 만들자~~
 
 ### Media Contents
 - 코드 Highlights는 Gist나 직접 GitHub 코드 링크
-  - 왠만하면 스샷 자제하자
-- 이미지는 후술
-- 큰 용량 파일은 Git으로 관리하기 보다는 외부 저장소(Git LFS가 싫음)
-- 동영상은 유튜브
+  - 왠만하면 코드 스샷은 자제하자
+- 이미지는 후술한 방법을 사용하자
+- 큰 용량 파일은 Git으로 관리하기 보다는 외부 링크로 만들 것(Git LFS가 싫음)
+- 동영상은 유튜브, 임베딩.
 
 #### File attachments on issues and pull requests
 - [공식 링크](https://help.github.com/en/articles/file-attachments-on-issues-and-pull-requests)
@@ -65,7 +67,7 @@ tags: [개발환경구축, GitHub Pages, Blog]
 - CDN 사용시 빠르면 gif 정도나 zip파일 링크는 그 쪽으로 땡길만 하다!
 - 속도에 이점도 없으면 언제 사라질지 모르는 불안정한 링크를 사용하는 것은 비추
 
-![compare.png](../assets/resource/19-06-15/3.png)
+![compare.png](/assets/resource/19-06-15/3.png)
 
 - 결과 1 : 오히려 느리다.
 - 결과 2 : 느리고 제어하기 힘들면 이점이 없다.
