@@ -11,20 +11,35 @@ tags: [개발환경구축, GitHub Pages, Blog]
 2. 블로그 운영 방법에 대한 메모
 
 
-## How to work GitHub Pages (작성중입니다)
-- 공식 문서 링크 + 요약
+## How to work GitHub Pages
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/2MsN8gpT6jY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+- GitHub에 블로그를 만든다 = 유저 혹은 조직 계정으로 [github.io](https://github.io) == [GitHub Pages](https://pages.github.com/)를 만든다.
+- [Wikipedia:GitHub Pages](https://en.wikipedia.org/wiki/GitHub#GitHub_Pages)
+  - 2008년부터 서비스한 정적 웹 호스팅 서비스
+  - 유저 블로그, 프로젝트 문서 등의 용도로 제공
+  - Jekyll 정적 웹 사이트, 블로그 제네레이터, 깃헙을 매끄럽게 합쳐 놓은 파이프라인 사용 가능
+  - [만약 Jekyll을 안 쓰면](https://help.github.com/en/articles/using-a-static-site-generator-other-than-jekyll) HTML 파일로 올려서 할 수도 있다.
 
 ### Jekyll on GitHub
-- GitHub에 맞춰져서 뭐가 좀 다른가
+- [공식 문서](https://help.github.com/en/articles/using-jekyll-as-a-static-site-generator-with-github-pages)
+- 미리 설정된 publishing branch가 push되면 자동으로 publish한다. 
+- [Jekyll Gem-based Theme 패키지](https://jekyllrb.com/docs/themes/)를 [_config.yml에 등록해서 쓸 수도 있다](https://help.github.com/en/articles/adding-a-jekyll-theme-to-your-github-pages-site).
+- 지정된 테마를 쓰고 않거나 직접 수정해서 쓰고 싶은데 Gem으로 올리기는 귀찮을 경우, [직접 오버라이딩](https://help.github.com/en/articles/adding-a-jekyll-theme-to-your-github-pages-site)해서 사용할 수도 있다.
+  - 이 경우 `_layouts`, `_includes`, `_sass`, `_assets` 를 오버라이딩할 수 있다.
 
 ### Hexo??
-- Jekyll like
+- Jekyll like 하다
+  - _config.yml, YAML지원, _post나 _assets 같은 경로가 비슷하게 지원된다.
+  - 근데 빌드해서 따로 정적으로 올리는게 추천되는 것 같다.
+- Jekyll이 Ruby Gem인 반면 무려 Node.js, npm을 쓴다.
+- 더 이쁘고 최신 스킨이 많다.
+- 사담) 그런데 굳이..? 어째서..? 확장기능 붙이고 설정하고 뭐하느니 그냥 짜서 쓰는게 더 빠른거 같아서 안 쓸래... 정적 웹 페이지 배포하는데 어째서 이걸 써야하는거야...
 
-### GitHub Pages? IO? Jekyll?
-- 차이점 서술
-
-### _post에 저장한 MarkDown이 어떻게 HTML로 변환되는건데?
-- Jekyll
+### 선택
+- [https://github.com/hyunjun529/hyunjun529.github.io](https://github.com/hyunjun529/hyunjun529.github.io)
+- Jekyll, 테마 오버라이딩.
 
 
 ## 관리 방법에 대해서
