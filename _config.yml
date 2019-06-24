@@ -1,8 +1,45 @@
 title: 3D삽질
-email: hyunjun529@gmail.com
-description: >- 
-  3D와 관련된 삽질을 하고 있습니다
+author: 카사다
+description: 신앙심 주도 개발, 3D와 관련된 토이 프로젝트 진행 중
 baseurl: "/" 
 url: https://blog.p316.net/
+lang: ko
+timezone: KR
+
+# Social media
+email: hyunjun529@gmail.com
 twitter_username: zaq1qaz
 github_username:  hyunjun529
+
+# Plugins
+plugins:
+  - jekyll-archives
+  - jekyll-paginate
+  - jekyll-sitemap
+
+# Build settings
+markdown: kramdown
+
+# Outputting
+permalink: /:year/:month/:day/:title/
+paginate_path: /posts/:num/
+paginate: 5
+
+# Markdown settings
+kramdown:
+  auto_ids: false
+  enable_coderay: false
+  entity_output: as_char
+  footnote_nr: 1
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  toc_levels: 1..6
+
+# jekyll-archives
+jekyll-archives:
+  enabled:
+    - categories
+    - tags
+  layout: category_archives
+  permalinks:
+    category: /categories/:name/
+    tag: /tags/:name/
