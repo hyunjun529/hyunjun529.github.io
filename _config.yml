@@ -6,6 +6,9 @@ url: https://blog.p316.net/
 lang: ko
 timezone: KR
 
+show_downloads: true
+google_analytics: UA-55359566-9
+
 email: hyunjun529@gmail.com
 twitter_username: zaq1qaz
 github_username:  hyunjun529
