@@ -1,26 +1,8 @@
-# 수동 설정 중
 title: 3D삽질
 email: hyunjun529@gmail.com
-description: >- # this means to ignore newlines until "baseurl:"
+description: >- 
   3D와 관련된 삽질을 하고 있습니다
-baseurl: "" # the subpath of your site, e.g. /blog
-url: https://blog.p316.net/ # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/" 
+url: https://blog.p316.net/
 twitter_username: zaq1qaz
 github_username:  hyunjun529
-
-# Build settings
-markdown: kramdown
-plugins:
-  - jekyll-feed
-
-# Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - node_modules
-  - vendor/bundle/
-  - vendor/cache/
-  - vendor/gems/
-  - vendor/ruby/
