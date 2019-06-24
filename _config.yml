@@ -1,14 +1,11 @@
 title: 3D삽질
 author: 카사다
 description: 신앙심 주도 개발, 3D와 관련된 토이 프로젝트 진행 중
-baseurl: "/" 
 url: https://blog.p316.net/
-lang: ko
-timezone: KR
-
-show_downloads: true
-google_analytics: UA-55359566-9
 
 email: hyunjun529@gmail.com
 twitter_username: zaq1qaz
 github_username:  hyunjun529
+
+google_analytics: UA-55359566-9
+
