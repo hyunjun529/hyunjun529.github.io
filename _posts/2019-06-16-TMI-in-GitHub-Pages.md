@@ -13,7 +13,9 @@ tags: [개발환경구축, GitHub Pages, Blog]
 
 ## How to work GitHub Pages
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/2MsN8gpT6jY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div class="wrapper-youtube">
+<iframe class="video-youtube" width="560" height="315" src="https://www.youtube.com/embed/2MsN8gpT6jY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 - GitHub에 블로그를 만든다 = 유저 혹은 조직 계정으로 [github.io](https://github.io) == [GitHub Pages](https://pages.github.com/)를 만든다.
 - [Wikipedia:GitHub Pages](https://en.wikipedia.org/wiki/GitHub#GitHub_Pages)
