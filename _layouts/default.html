@@ -4,9 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     {% seo %}
-
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet">
     <link href="/assets/css/style.css" rel="stylesheet">
     <!--[if lt IE 9]>
@@ -17,25 +15,23 @@
     <div class="wrapper">
       <header>
         <h1><a href="/">{{ site.title }}</a></h1>
-        
         <img src="/assets/img/logo.png" alt="Logo" />
-
         <p>{{ site.description }}</p>
-
       </header>
 
       <section>
-      {{ content }}
+      
+      {{content}}
 
       {%- if site.posts.size > 0 -%}
-      <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
-      <ul class="post-list">
+      <h2>{{ page.list_title | default: "Posts" }}</h2>
+      <ul>
         {%- for post in site.posts -%}
         <li>
           {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-          <span class="post-meta">{{ post.date | date: date_format }}</span>
+          <span>{{ post.date | date: date_format }}</span>
           <h3>
-            <a class="post-link" href="{{ post.url | relative_url }}">
+            <a href="{{ post.url | relative_url }}">
               {{ post.title | escape }}
             </a>
           </h3>
@@ -46,28 +42,22 @@
         {%- endfor -%}
       </ul>
       {%- endif -%}
-     
       </section>
 
       <footer>
-        {% if site.github.is_project_page %}
-        <p>This project is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
-        {% endif %}
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+        <p><small>Hosted on GitHub Pages &mdash; <a href="https://github.com/hyunjun529">hyunjun529</a></small></p>
       </footer>
     </div>
 
-    <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
+    <script src="/assets/js/scale.fix.js"></script>
 
-    {% if site.google_analytics %}
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
       })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-      ga('create', '{{ site.google_analytics }}', 'auto');
+      ga('create', 'UA-55359566-9', 'auto');
       ga('send', 'pageview');
     </script>
-    {% endif %}
   </body>
 </html>
