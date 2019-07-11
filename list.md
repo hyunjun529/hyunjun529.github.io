@@ -7,20 +7,13 @@ permalink: /list
 글 목록 WIP
 
 {%- if site.posts.size > 0 -%}
-<ul>
+## {{ page.list_title | default: "Posts" }}
 {%- for post in site.posts -%}
-<li>
     {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-    <span>{{ post.date | date: date_format }}</span>
-    <h3>
-    <a href="{{ post.url | relative_url }}">
-        {{ post.title | escape }}
-    </a>
-    </h3>
+- {{ post.date | date: date_format }} [{{ post.title | escape }}]({{ post.url | relative_url }})
     {%- if site.show_excerpts -%}
     {{ post.excerpt }}
     {%- endif -%}
-</li>
 {%- endfor -%}
-</ul>
+
 {%- endif -%}
