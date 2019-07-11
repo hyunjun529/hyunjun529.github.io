@@ -1,8 +1,10 @@
 ---
 layout: default
-title: 3D 삽질 목록
+title: list
 permalink: /list
 ---
+
+글 목록 WIP
 
 {%- if site.posts.size > 0 -%}
 <h2>{{ page.list_title | default: "Posts" }}</h2>

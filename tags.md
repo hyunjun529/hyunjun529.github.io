@@ -1,7 +1,7 @@
 ---
 layout: default
-title: About
-permalink: /about
+title: tags
+permalink: /tags
 ---
 
 컴퓨터 그래픽스를 중심으로 이것 저것 삽질하며 토이프로젝트 진행하고 있습니다.
