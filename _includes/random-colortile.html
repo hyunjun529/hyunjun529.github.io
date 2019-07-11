@@ -1,0 +1,32 @@
+<script type='text/javascript'>
+    window.onload=function(){
+        var canvas = document.getElementById("canvas-in-header");
+        var ctx = canvas.getContext("2d");
+        var RAF;
+        var i = 0, j = 0;
+        function animate() {
+            ctx.beginPath();
+            ctx.fillRect(10 * j, 10 * i, 10, 10);
+            ctx.fillStyle = 'rgb(' + parseInt(Math.random() * 255) + ',' + parseInt(Math.random() * 255) + ',' + parseInt(Math.random() * 255) + ')';
+            ctx.fill();
+            ctx.closePath();
+            // update
+            j += 1;
+            console.log(i + "/" + j);
+            if (j >= 50) {
+                i += 1;
+                j = 0;
+                if (i >= 50) {
+                    cancelAnimationFrame(RAF);
+                }
+            }
+            RAF = requestAnimationFrame(function () {
+                animate();
+            });
+        }
+        animate();
+}
+</script>
+<div class="wrapper-header-canvas">
+    <canvas id="canvas-in-header"></canvas>
+</div>

@@ -17,31 +17,18 @@
         <h1><a href="/">{{ site.title }}</a></h1>
         <img src="/assets/img/logo.png" alt="Logo" />
         <p>{{ site.description }}</p>
+        <ul>
+          <li><a href=""><strong>list</strong></a></li>
+          <li><a href="">WIP<strong>Tags</strong></a></li>
+          <li><a href="">WIP<strong>Labs</strong></a></li>
+          <li><a href="">WIP<strong>About</strong></a></li>
+        </ul>
+        <canvas></canvas>
       </header>
 
       <section>
       
       {{content}}
-
-      {%- if site.posts.size > 0 -%}
-      <h2>{{ page.list_title | default: "Posts" }}</h2>
-      <ul>
-        {%- for post in site.posts -%}
-        <li>
-          {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-          <span>{{ post.date | date: date_format }}</span>
-          <h3>
-            <a href="{{ post.url | relative_url }}">
-              {{ post.title | escape }}
-            </a>
-          </h3>
-          {%- if site.show_excerpts -%}
-            {{ post.excerpt }}
-          {%- endif -%}
-        </li>
-        {%- endfor -%}
-      </ul>
-      {%- endif -%}
 
       </section>
 
