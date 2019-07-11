@@ -1,3 +1,19 @@
-.wrapper-header-canvas {
+.wrapper-header-canvas,
+.wrapper-header-canvas canvas {
     width: 100%;
+}
+
+@media print, screen and (max-width: 960px) {
+    .wrapper-header-canvas {
+        width: 270px;
+        position: absolute;
+        right: 50px;
+        top: 100px;
+    }
+}
+
+@media print, screen and (max-width: 720px) {
+    .wrapper-header-canvas {
+        position: static;
+    }
 }
