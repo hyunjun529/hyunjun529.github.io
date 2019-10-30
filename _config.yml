@@ -21,6 +21,9 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: https://hyunjun529.github.io # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: zaq1qaz
 github_username:  hyunjun529
+disqus:
+  shortname: blog-p316-net
+google_analytics: UA-55359566-9
 
 # Build settings
 markdown: kramdown
@@ -43,3 +46,9 @@ exclude:
 # Not Defaults
 favicon: ""
 production_url: https://hyunjun529.github.io
+
+# minima setup
+minima:
+  social_links:
+    twitter: zaq1qaz
+    github: hyunjun529
