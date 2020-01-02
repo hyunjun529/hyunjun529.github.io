@@ -1,0 +1,43 @@
+---
+layout: post
+title:  "sdl을 wasm으로 웹페이지에서"
+date:   2020-01-02 21:00:00 +0000
+categories: wasm
+comment: true
+---
+
+# SDL to WASM (WIP)
+오늘의 삽질 : https://github.com/shlomnissan/sdl-wasm
+
+모종의 이유로 Windows에서 WinAPI32 > SDL > WebAssembly를 해야하는 작업을 하고 있어서 그 삽질 기록을 남기는 중
+
+## Install SDL
+일단 아래 두 개, 윈도우 개발 버전으로 받는다.
+- [SDL 2.1.0](https://www.libsdl.org/download-2.0.php)
+- [SDL_Image 2.0.5](https://www.libsdl.org/projects/SDL_image/)
+
+## Vcpkg?
+개인적으로 Visaul Studio로 C++을 할 때 [vcpkg](https://docs.microsoft.com/ko-kr/cpp/build/vcpkg?view=vs-2019)를 선호하는 편이지만, 이번 작업은 SDL Image가 필요한 관계로.. 오히려 꼬여서 대충 패스
+
+## how to build it?
+Windows에서 돌아가며, 동시에 WASM으로도 돌아가야 하기 때문에 각각을 해보자
+
+### emscripten with Docker
+- sdl-wasm에 적힌대로 실행하면 됨, 코드도 딱히 수정할 거 없고
+- 단 Docker를 통해서 emscripten을 빌드하면 좋다.
+  - https://hub.docker.com/r/trzeci/emscripten/
+- WSL 2가 갑자기 땡겨서 해봤는데 2020년 1월 2일 기준으로 프로에 인사이더까지 깔아야 사용 가능함
+  - 막상 깔고나니까 어차피 빌드용으로 쓸건데 이거 왜 했지 싶지만 아무튼 했음
+
+### run in Windows
+- .h(include), .lib(lib), .dll 이 세 가지를 적절하게 경로 설정한다.
+- 그리고 emscripten의 main_loop를 대신할 loop를 만들어야하는데 딱 60fps에 맞춰서 돌리는 방법은 아직 찾는 중
+  - https://lazyfoo.net/tutorials/SDL/01_hello_SDL/index2.php
+  - `int main()` > `int main(int argc, char* args[])` 해줘야 하더라, sdl_main인가 때문이라는데 이거 때문에 좀 고생함
+
+
+## What is next?
+- 일단 작업한 내용은 정리해서 [PIKA_MOCK](https://github.com/hyunjun529/PIKA_MOCK) 쪽으로 합쳐야함
+- WinAPI하고 1:1로 대응될 수 있도록 적절히 추상화해서 부분을 나눠야 함
+- Visual Studio 2019 기준으로 IDE에서 빌드 설정 나누는게 빠를지, 아니면 CMakeList로 만들어서 굽는게 빠를지는 아직 모르겠는데 아마 왠만해선 Visual Studio를 통해서 WinAPI를 빌드하고 SDL은 다른 빌드 방법을 찾는게 빠를 듯
+- 매크로 세팅까지 해야하나 싶긴한데 어차피 한 번 쓰고 버릴 PoC 같은거라 아직 고민 중
