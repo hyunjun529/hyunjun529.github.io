@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "sdl을 wasm으로 웹페이지에서"
+title:  "SDL로 Windows UI, WebAssembly(WASM)에 빌드하기"
 date:   2020-01-02 21:00:00 +0000
 categories: wasm
 comment: true
