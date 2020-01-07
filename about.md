@@ -4,7 +4,9 @@ title: About
 permalink: /about/
 ---
 
-:construction: 뭔가 좀 더 쌓이면 그 때 쓰겠습니다 :construction:
+
+{% youtube e9Pq4g-rb4M %}
+
 
 - [site](https://p316.net)
 - [twitter](https://mobile.twitter.com/zaq1qaz)
