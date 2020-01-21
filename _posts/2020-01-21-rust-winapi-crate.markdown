@@ -1,15 +1,15 @@
 ---
 layout: post
-title:  "Rust winapi crate"
+title:  "Rust winapi crate로 winapi 책 2장 띄우기"
 date:   2020-01-21 00:00:00 +0000
 categories: wasm rust winapi
 comment: true
 ---
 
-# Rust winapi crate로 WinAPI32 UI 띄우기
+# Rust winapi crate로 winapi 책 2장 띄우기
 https://github.com/retep998/winapi-rs
 
-무조건 외우라고 강조하시던 추억의 WinAPI32 책 2장 코드를 Rust로 옮겼습니다.
+무조건 외우라고 강조하시던 [추억의 WinAPI32 책 2장 코드](http://soen.kr/lecture/win32api/lec2/lec2-1-1.htm)를 Rust로 옮겼습니다.
 
 ## 삽질 포인트
 - 멀티바이트 지원 안 됨, 무조건 유니코드
