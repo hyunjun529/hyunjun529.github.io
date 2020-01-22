@@ -10,6 +10,7 @@ https://blog.p316.net
 - JavaScript
 - Rust
 - ffmpeg
+- WinAPI32
 
 ## Other links
 - [site](https://p316.net)
