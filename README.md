@@ -1,8 +1,6 @@
 # hyunjun529.github.io
 https://blog.p316.net
 
-3D삽질, meaning Toy Project :D
-
 ## Contents
 - 3D Graphics
 - C++
