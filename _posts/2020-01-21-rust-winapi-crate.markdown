@@ -10,9 +10,7 @@ comment: true
 
 ![legacy](/img/200121_winapi32.jpg)
 
-https://github.com/retep998/winapi-rs
-
-무조건 외우라고 강조하시던 [추억의 WinAPI32 책 2장 코드](http://soen.kr/lecture/win32api/lec2/lec2-1-1.htm)를 Rust로 옮겼습니다.
+무조건 외우라고 강조하시던 [추억의 WinAPI32 책 2장 코드](http://soen.kr/lecture/win32api/lec2/lec2-1-1.htm)를 Rust로 옮겼습니다. [winapi-rs](https://github.com/retep998/winapi-rs)를 사용합니다.
 
 ## 삽질 포인트
 - 멀티바이트 지원 안 됨, 무조건 유니코드
