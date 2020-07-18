@@ -6,8 +6,6 @@ categories: wasm rust winapi
 comment: true
 ---
 
-# Rust winapi crate로 winapi 책 2장 띄우기
-
 ![legacy](/img/200121_winapi32.jpg)
 
 무조건 외우라고 강조하시던 [추억의 WinAPI32 책 2장 코드](http://soen.kr/lecture/win32api/lec2/lec2-1-1.htm)를 Rust로 옮겼습니다. [winapi-rs](https://github.com/retep998/winapi-rs)를 사용합니다.
