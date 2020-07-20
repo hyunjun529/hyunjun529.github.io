@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "디지털 풍화 ~Twitter Fleet의 글씨는 언제쯤 흐릿해질까~"
-date:   2020-01-02 21:00:00 +0000
+date:   2020-07-20 21:00:00 +0000
 categories: image_processing ffmpeg JPEG
 comment: true
 ---
