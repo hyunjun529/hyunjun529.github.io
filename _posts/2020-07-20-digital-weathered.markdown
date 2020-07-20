@@ -6,7 +6,7 @@ categories: image_processing ffmpeg JPEG
 comment: true
 ---
 
-![플릿](/img/200720/thumb.jpg)
+![플릿](/img/200720/thumb.PNG)
 
 Twitte Fleet으로 글씨를 열화시키는게 유행처럼 돌고 있어서 대충 몇 바퀴를 돌아야 글씨가 사라질지 왜 때문인지 알아보는 글.
 
@@ -57,9 +57,9 @@ Twitte Fleet으로 글씨를 열화시키는게 유행처럼 돌고 있어서 �
 
 - Quality Paramter를 뽑아볼 수 있다.
 
-![ang2](/img/200720/ang2.jpg)
-![ang](/img/200720/ang.jpg)
-![ang3](/img/200720/ang3.jpg)
+![ang2](/img/200720/ang2.PNG)
+![ang](/img/200720/ang.PNG)
+![ang3](/img/200720/ang3.PNG)
 
 ### 스크립트
 #### [magick compare](https://imagemagick.org/script/compare.php)
