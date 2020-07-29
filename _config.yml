@@ -16,14 +16,21 @@
 title: 3D삽질
 email: hyunjun529@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-   비정기 취미 프로젝트 가동중  
+  비정기 취미 프로젝트 가동중  
 baseurl: "" # the subpath of your site, e.g. /blog
 url: https://hyunjun529.github.io # the base hostname & protocol for your site, e.g. http://example.com
+
 twitter_username: zaq1qaz
 github_username:  hyunjun529
 disqus:
   shortname: blog-p316-net
 google_analytics: UA-55359566-9
+
+sass:
+  sass_dir: _sass
+
+plainwhite:
+  search: true
 
 # Build settings
 markdown: kramdown
