@@ -1,0 +1,12 @@
+// https://www.fabrizioduroni.it/2020/05/20/dark-mode-css-sass-scss.html
+
+@media (prefers-color-scheme: light) {
+    body {
+        background-color: white;
+        color: black;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    @import "color/dark";
+}
