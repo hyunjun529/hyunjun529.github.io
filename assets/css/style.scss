@@ -3,6 +3,8 @@
 
 @import "plain";
 
+@import "color";
+
 {% if site.vaporwave.search %}
   @import "search";
 {% endif %}
