@@ -1,6 +1,5 @@
 ---
 ---
-
 window.onload = function () {
     var sjs = SimpleJekyllSearch({
         searchInput: document.getElementById('searchbar'),

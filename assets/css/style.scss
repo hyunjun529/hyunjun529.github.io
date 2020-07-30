@@ -1,0 +1,8 @@
+---
+---
+
+@import "plain";
+
+{% if site.vaporwave.search %}
+  @import "search";
+{% endif %}
