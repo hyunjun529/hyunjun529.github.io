@@ -1,42 +1,38 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+# Welcome to vaporwave
 
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
 title: 3D삽질
-email: hyunjun529@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  비정기 취미 프로젝트 가동중  
+  비정기 취미 프로젝트 가동중
+
+url: https://hyunjun529.github.io # the base hostname & protocol for your site, e.g. http://example.com\
 baseurl: "" # the subpath of your site, e.g. /blog
-url: https://hyunjun529.github.io # the base hostname & protocol for your site, e.g. http://example.com
+production_url: https://hyunjun529.github.io
+favicon: "favicon.ico"
 
-twitter_username: zaq1qaz
-github_username:  hyunjun529
-disqus:
-  shortname: blog-p316-net
-google_analytics: UA-55359566-9
-
+# Jekyll
+encoding: "utf-8"
+markdown: kramdown
 sass:
   sass_dir: _sass
-
-plainwhite:
-  search: true
-
-# Build settings
-markdown: kramdown
-theme: minima
 plugins:
   - jekyll-feed
+
+# Comment
+disqus:
+  enable: true
+  shortname: blog-p316-net
+utterances:
+  enable: true
+
+# ETC
+email: hyunjun529@gmail.com
+twitter_username: zaq1qaz
+github_username:  hyunjun529
+google_analytics: UA-55359566-9
+
+# vaporwave
+vaporwave:
+  search: true
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
@@ -51,11 +47,4 @@ exclude:
   - vendor/ruby/
 
 # Not Defaults
-favicon: ""
-production_url: https://hyunjun529.github.io
 
-# minima setup
-minima:
-  social_links:
-    twitter: zaq1qaz
-    github: hyunjun529
