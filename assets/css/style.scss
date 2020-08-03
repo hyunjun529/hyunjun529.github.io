@@ -1,9 +1,15 @@
 ---
 ---
 
-@import "plain";
+@import "fontello";
 
-@import "color";
+{% if site.vaporwave.color == "dark" %}
+  @import "color/dark";
+{% elsif site.vaporwave.color == "light" %}
+  @import "color/light";
+{% elsif site.vaporwave.color == "auto" or site.vaporwave == false %}
+  @import "color/auto";
+{% endif %}
 
 {% if site.vaporwave.search %}
   @import "search";

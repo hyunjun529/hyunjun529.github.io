@@ -75,8 +75,7 @@ main {
         }
   
         &::before {
-          content: '\e805';
-          font-family: "fontello";
+          content: '▷';
           font-style: normal;
           display: inline-block;
           text-decoration: inherit;
