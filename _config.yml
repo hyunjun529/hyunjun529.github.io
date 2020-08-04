@@ -38,6 +38,7 @@ vaporwave:
 
   search: true
   sitemap: true
+  copyright: hyunjun529
   color: auto # light/dark/auto
   
   html_lang: ko

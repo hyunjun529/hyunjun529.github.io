@@ -2,93 +2,49 @@
 <html lang="{{ site.vaporwave.html_lang }}">
 
 <head>
-  {%- include head.html -%}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  {%- include favicon.html -%}
+
+  <link rel="stylesheet" href="https://unpkg.com/tachyons@4.12.0/css/tachyons.min.css" />
+  <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
+
+  <title>{{ page.title | default: site.title }}</title>
 </head>
 
-<body>
-  <main class="container">
-    <section class="about">
-      <a href="{{ "/" | relative_url}}"><img src="{{site.baseurl }}/{{ site.vaporwave.profile_image }}" alt="{{ site.vaporwave.name }}"></a>
-      <h2 id="title">
-        <a href="{{ "/" | relative_url }}">{{ site.vaporwave.name }}</a>
-      </h2>
-      <p class="tagline">{{ site.vaporwave.tagline }}</p>
-      <ul class="social">
-        {%- if site.vaporwave.social_links.github -%}
-        <a href="https://github.com/{{ site.vaporwave.social_links.github }}" target="_blank">
-          <li>
-            <i class="icon-github-squared"></i>
-          </li>
-        </a>
-        {%- endif -%}
-		    {%- if site.vaporwave.social_links.gitlab -%}
-        <a href="https://gitlab.com/{{ site.vaporwave.social_links.gitlab }}" target="_blank">
-          <li>
-            <i class="icon-gitlab"></i>
-          </li>
-        </a>
-        {%- endif -%}
-        {%- if site.vaporwave.social_links.linkedIn -%}
-        <a href="https://www.linkedin.com/{{ site.vaporwave.social_links.linkedIn }}" target="_blank">
-          <li>
-            <i class="icon-linkedin-squared"></i>
-          </li>
-        </a>
-        {%- endif -%}
-        {%- if site.vaporwave.social_links.twitter -%}
-        <a href="https://twitter.com/{{ site.vaporwave.social_links.twitter }}" target="_blank">
-          <li>
-            <i class="icon-twitter-squared"></i>
-          </li>
-        </a>
-        {%- endif -%}
-        {%- if site.vaporwave.social_links.facebook -%}
-        <a href="https://facebook.com/{{ site.vaporwave.social_links.facebook }}" target="_blank">
-          <li>
-            <i class="icon-facebook-official"></i>
-          </li>
-        </a>
-        {%- endif -%}
-        {%- if site.vaporwave.social_links.youtube -%}
-        <a href="https://youtube.com/{{ site.vaporwave.social_links.youtube }}" target="_blank">
-          <li>
-            <i class="icon-youtube-play"></i>
-          </li>
-        </a>
-        {%- endif -%}
-        {%- if site.vaporwave.social_links.instagram -%}
-        <a href="https://instagram.com/{{ site.vaporwave.social_links.instagram }}" target="_blank">
-          <li>
-            <i class="icon-instagram"></i>
-          </li>
-        </a>
-        {%- endif -%}
-        {%- if site.vaporwave.social_links.flickr -%}
-        <a href="https://flickr.com/{{ site.vaporwave.social_links.flickr }}" target="_blank">
-          <li>
-            <i class="icon-flickr"></i>
-          </li>
-        </a>
-        {%- endif -%}
-      </ul>
-      {%- if site.vaporwave.navigation -%}
-      <nav class="navigation">
-        <ul>
-          {% for link in site.vaporwave.navigation %}
-          <li>
-            <a href="{{ link.url }}">{{ link.title }}</a>
-          </li>
-          {% endfor %}
-        </ul>
-      </nav>
-      {%- endif -%}
-      <p>&copy; {{ "now" | date: "%Y" }}</p>
-    </section>
+<body class="pa4-l normal">
+  <div class="bg-navy h-100 pa3 ph0-l pv6-l">
+    <div class="center mw7">
+      <section class="about">
+        <a href="{{ "/" | relative_url}}"><img src="{{site.baseurl }}/{{ site.vaporwave.profile_image }}"
+            alt="{{ site.vaporwave.name }}"></a>
+        <h2 id="title">
+          <a href="{{ "/" | relative_url }}">{{ site.vaporwave.name }}</a>
+        </h2>
+        <p class="tagline">{{ site.vaporwave.tagline }}</p>
 
-    <section class="content">
-      {{ content }}
-    </section>
-  </main>
+        {%- if site.vaporwave.navigation -%}
+        <nav class="navigation">
+          <ul>
+            {% for link in site.vaporwave.navigation %}
+            <li>
+              <a href="{{ link.url }}">{{ link.title }}</a>
+            </li>
+            {% endfor %}
+          </ul>
+        </nav>
+        {%- endif -%}
+      </section>
+
+      <section class="content">
+        {{ content }}
+      </section>
+
+      {%- include footer.html -%}
+    </div>
+  </div>
 
   {%- if site.vaporwave.analytics_id -%}
   <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.vaporwave.analytics_id }}"></script>
