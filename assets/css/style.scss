@@ -8,9 +8,11 @@
 {% elsif site.vaporwave.color == "light" %}
   @import "color/light";
 {% elsif site.vaporwave.color == "auto" or site.vaporwave == false %}
-  @import "color/auto";
+  @import "color/dark";
 {% endif %}
 
 {% if site.vaporwave.search %}
   @import "search";
 {% endif %}
+
+@import "vaporwave";
