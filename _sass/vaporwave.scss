@@ -1,3 +1,28 @@
-#vp-body {
+html, body {
+    min-height: 100%;
+}
+
+#vp-bg-border {
     background-color: $colorBackgroundBorder;
+    background: linear-gradient(
+            0deg, 
+            $colorBackgroundBorder-1 0%, 
+            $colorBackgroundBorder-2 35%, 
+            $colorBackgroundBorder-3 100%
+        );
+    padding: 1.5rem;
+}
+
+#vp-bg {
+    background-color: $colorBackground;
+}
+
+#vp-footer {
+    color: $colorFont;
+    a {
+        color: $colorLink;
+        :visited {
+            color: $colorLinkVisited;
+        }
+    }
 }
