@@ -1,72 +1,26 @@
-<footer class="pv4 ph3 ph5-m ph6-l" id="vp-footer">
-  <ul class="dib pa0 ph5 list">
-    {%- if site.vaporwave.social_links.github -%}
-    <li class="mh2 dib w-auto">
-      <a href="https://github.com/{{ site.vaporwave.social_links.github }}" target="_blank"
-        class="link dim">
-        <i class="icon-github-squared"></i>
-      </a>
-    </li>
-    {%- endif -%}
-    {%- if site.vaporwave.social_links.gitlab -%}
-    <li class="mh2 dib w-auto">
-      <a href="https://gitlab.com/{{ site.vaporwave.social_links.gitlab }}" target="_blank"
-        class="link dim">
-        <i class="icon-gitlab"></i>
-      </a>
-    </li>
-    {%- endif -%}
-    {%- if site.vaporwave.social_links.linkedIn -%}
-    <li class="mh2 dib w-auto">
-      <a href="https://www.linkedin.com/{{ site.vaporwave.social_links.linkedIn }}" target="_blank"
-        class="link dim">
-
-        <i class="icon-linkedin-squared"></i>
-      </a>
-    </li>
-    {%- endif -%}
-    {%- if site.vaporwave.social_links.twitter -%}
-    <li class="mh2 dib w-auto">
-      <a href="https://twitter.com/{{ site.vaporwave.social_links.twitter }}" target="_blank"
-        class="link dim">
-        <i class="icon-twitter-squared"></i>
-      </a>
-    </li>
-    {%- endif -%}
-    {%- if site.vaporwave.social_links.facebook -%}
-    <li class="mh2 dib w-auto">
-      <a href="https://facebook.com/{{ site.vaporwave.social_links.facebook }}" target="_blank"
-        class="link dim">
-        <i class="icon-facebook-official"></i>
-      </a>
-    </li>
-    {%- endif -%}
-    {%- if site.vaporwave.social_links.youtube -%}
-    <li class="mh2 dib w-auto">
-      <a href="https://youtube.com/{{ site.vaporwave.social_links.youtube }}" target="_blank"
-        class="link dim">
-        <i class="icon-youtube-play"></i>
-      </a>
-    </li>
-    {%- endif -%}
-    {%- if site.vaporwave.social_links.instagram -%}
-    <li class="mh2 dib w-auto">
-      <a href="https://instagram.com/{{ site.vaporwave.social_links.instagram }}" target="_blank"
-        class="link dim">
-        <i class="icon-instagram"></i>
-      </a>
-    </li>
-    {%- endif -%}
-    {%- if site.vaporwave.social_links.flickr -%}
-    <li class="mh2 dib w-auto">
-      <a href="https://flickr.com/{{ site.vaporwave.social_links.flickr }}" target="_blank"
-        class="link dim">
-        <i class="icon-flickr"></i>
-      </a>
-    </li>
-    {%- endif -%}
-  </ul>
-  <p class="ph6">
-    Copyright &copy; {{ site.vaporwave.copyright }} {{ "now" | date: "%Y" }}
-  </p>
+<footer class="pv4 flex items-end justify-end" id="vp-footer">
+  <div class="fl w-two-thirds pa2 outline">
+    <div class="flex">
+      <div class="flex-column">
+        <div>
+          {%- include social.html -%}
+        </div>
+        <div class="w-100">
+          <h2 id="vp-title">
+            <a href="{{ "/" | relative_url }}">{{ site.vaporwave.name }}</a>
+          </h2>
+        </div>
+        <div class="w-100">
+          <p class="tagline">{{ site.vaporwave.tagline }}</p>
+        </div>
+      </div>
+      <div class="flex">
+        <a href="{{ "/" | relative_url}}">
+          <img class="br-100 pa1 ba b--black-10 h3 w3" 
+            src="{{site.baseurl }}/{{ site.vaporwave.profile_image }}"
+            alt="{{ site.vaporwave.name }}">
+        </a>
+      </div>
+    </div>
+  </div>  
 </footer>
