@@ -15,28 +15,9 @@
 </head>
 
 <body class="pa4-l normal" id="vp-bg-border">
-  <div class="h-100 pa3 ph0-l pv6-l" id="vp-bg">
+  <div class="h-100 pa3 ph2-l pv3-l" id="vp-bg">
     <div class="center mw7">
-      <section class="about">
-        <a href="{{ "/" | relative_url}}"><img src="{{site.baseurl }}/{{ site.vaporwave.profile_image }}"
-            alt="{{ site.vaporwave.name }}"></a>
-        <h2 id="title">
-          <a href="{{ "/" | relative_url }}">{{ site.vaporwave.name }}</a>
-        </h2>
-        <p class="tagline">{{ site.vaporwave.tagline }}</p>
-
-        {%- if site.vaporwave.navigation -%}
-        <nav class="navigation">
-          <ul>
-            {% for link in site.vaporwave.navigation %}
-            <li>
-              <a href="{{ link.url }}">{{ link.title }}</a>
-            </li>
-            {% endfor %}
-          </ul>
-        </nav>
-        {%- endif -%}
-      </section>
+      {%- include header.html -%}
 
       <section class="content">
         {{ content }}

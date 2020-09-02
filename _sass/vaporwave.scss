@@ -2,6 +2,17 @@ html, body {
     min-height: 100%;
 }
 
+a {
+    text-decoration: none;
+}
+
+h1, h2 {
+    color: $colorFont-1;
+}
+h3, h4 {
+    color: $colorFont-2;
+}
+
 #vp-bg-border {
     background-color: $colorBackgroundBorder;
     background: linear-gradient(

@@ -1,0 +1,18 @@
+<div class="flex flex-column pv5 mt3 outline">
+  <div class="w-100">
+    <code>1</code>
+  </div>
+  <div class="w-100">
+    {%- if site.vaporwave.navigation -%}
+    <nav class="navigation">
+      <ul>
+        {% for link in site.vaporwave.navigation %}
+        <li>
+          <a href="{{ link.url }}">{{ link.title }}</a>
+        </li>
+        {% endfor %}
+      </ul>
+    </nav>
+    {%- endif -%}
+  </div>
+</div>
