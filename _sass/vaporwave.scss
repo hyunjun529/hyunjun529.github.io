@@ -2,15 +2,20 @@ html, body {
     min-height: 100%;
 }
 
-a {
-    text-decoration: none;
-}
-
 h1, h2 {
     color: $colorFont-1;
 }
+
 h3, h4 {
     color: $colorFont-2;
+}
+
+a {
+    color: $colorLink;
+    text-decoration: none;
+    :visited {
+        color: $colorLinkVisited;
+    }
 }
 
 #vp-bg-border {
@@ -29,11 +34,10 @@ h3, h4 {
 }
 
 #vp-footer {
-    color: $colorFont;
     a {
-        color: $colorLink;
+        color: $colorFont-1;
         :visited {
-            color: $colorLinkVisited;
+            color: $colorFont-1;
         }
     }
 }
