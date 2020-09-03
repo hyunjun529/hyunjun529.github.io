@@ -1,26 +1,28 @@
-<footer class="pv4 flex items-end justify-end" id="vp-footer">
-  <div class="fl w-two-thirds pa2 outline">
-    <div class="flex">
-      <div class="flex-column">
-        <div>
-          {%- include social.html -%}
-        </div>
-        <div class="w-100">
-          <h2 id="vp-title">
-            <a href="{{ "/" | relative_url }}">{{ site.vaporwave.name }}</a>
-          </h2>
-        </div>
-        <div class="w-100">
-          <p class="tagline">{{ site.vaporwave.tagline }}</p>
-        </div>
-      </div>
+<footer class="mt5 mb4 pa2 flex" id="vp-footer">
+  <div class="w-100">
+    <div class="flex flex-column">
       <div class="flex">
-        <a href="{{ "/" | relative_url}}">
-          <img class="br-100 pa1 ba b--black-10 h3 w3" 
-            src="{{site.baseurl }}/{{ site.vaporwave.profile_image }}"
-            alt="{{ site.vaporwave.name }}">
-        </a>
+        <div class="flex items-center">
+          <a href="{{ "/" | relative_url}}">
+            <img class="br-100 pa1 ba b--black-10 h3 w3 mw3 mh3" 
+              src="{{site.baseurl }}/{{ site.vaporwave.profile_image }}"
+              alt="{{ site.vaporwave.name }}">
+          </a>
+        </div>
+        <div class="flex flex-column">
+          <div class="w-100">
+            <h2 class="mv0">
+              <a href="{{ "/" | relative_url }}">{{ site.vaporwave.name }}</a>
+            </h2>
+          </div>
+          <div class="w-100 mt2">
+            <p class="ma0">{{ site.vaporwave.tagline }}</p>
+          </div>
+          <div class="w-100 mt3">
+            {%- include social.html -%}
+          </div>
+        </div>
       </div>
     </div>
-  </div>  
+  </div>
 </footer>
