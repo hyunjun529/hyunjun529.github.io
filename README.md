@@ -1,6 +1,5 @@
-# hyunjun529.github.io
+# hyunjun529.github.io :construction:
 https://blog.p316.net
-
 
 ## Contents
 - 3D Graphics
