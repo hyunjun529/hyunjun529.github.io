@@ -5,14 +5,22 @@
 </div>
 -->
 {% if site.vaporwave.search %}
-<div class="posts-labelgroup" id="posts-labelgroup">
-  <div class="search-container">
-    <div class="search-section">
-      <i class="icon-search"></i>
-      <input type="text" name="search" id="searchbar" autocomplete="off" aria-label="search in posts">
-    </div>
-    <div class="search-results" id="search-results" data-placeholder="No Results" style="display: none;"></div>
+<header>
+  <div>
+    <a class="link purple ma1" href="{{ "/" | relative_url}}">home</a>
+    <a class="link purple ma1" href="{{ "/about" | relative_url }}">about</a>
   </div>
-</div>
-<h1 id="posts-label"></h1>
+  <div class="ba br4 mt3 mb5">
+    <div class="posts-labelgroup" id="posts-labelgroup">
+      <div class="search-container">
+        <div class="search-section">
+          <i class="icon-search"></i>
+          <input type="text" name="search" id="searchbar" autocomplete="off" aria-label="search in posts">
+        </div>
+        <div class="search-results" id="search-results" data-placeholder="No Results" style="display: none;"></div>
+      </div>
+    </div>
+    <div id="posts-label"></div>
+  </div>
+</header>
 {% endif %}

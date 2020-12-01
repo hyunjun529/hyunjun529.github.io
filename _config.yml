@@ -12,6 +12,7 @@ favicon: "favicon.ico"
 # Jekyll
 encoding: "utf-8"
 markdown: kramdown
+highlighter: rouge
 sass:
   sass_dir: _sass
 plugins:
@@ -33,7 +34,7 @@ google_analytics: UA-55359566-9
 # vaporwave
 vaporwave:
   name: 카사다
-  tagline: Developer. Designer
+  tagline: SW Developer
   profile_image: "assets/profile.png"
 
   search: true
@@ -49,12 +50,11 @@ vaporwave:
   # generate social links in footer
   social_links:
     github:  hyunjun529
-    gitlab: jekyll
-    linkedIn: jekyll
+    linkedIn: zaq1qaz
     twitter: zaq1qaz
-    facebook: jekyll
-    instagram: jekyll
-    youtube: jekyll
+    facebook: zaq1qaz
+    instagram: hyunjun529
+    youtube: UCPwsgRyz60XPg8yGJ5HalVA
 
 exclude:
   - Gemfile
