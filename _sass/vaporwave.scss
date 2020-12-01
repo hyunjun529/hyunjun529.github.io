@@ -41,3 +41,33 @@ a {
         }
     }
 }
+
+article {
+    line-height: normal;
+}
+
+article h2,
+article h3,
+article h4 {
+    margin-block-end: 0.25em;
+}
+
+article p {
+    margin-block-start: 0.5em;
+}
+
+article li {
+    margin-top: 0.5em;
+    margin-bottom: 0.7em;
+}
+
+article a {
+    overflow: hidden;
+}
+article ul {
+    padding-inline-start: 20px;
+}
+
+.highlight {
+    overflow: scroll;
+}

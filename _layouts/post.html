@@ -2,20 +2,20 @@
 layout: default
 ---
 {%- assign date_format = site.plainwhite.date_format | default: "%b %-d, %Y" -%}
-<div class="post-container">
-  <a class="post-link" href="{{ page.url | relative_url }}">
-    <h2 class="post-title">{{ page.title | escape }}</h2>
-  </a>
+<article class="post-container">
   <div class="post-meta">
-    <div class="post-date"><i class="icon-calendar"></i>{{ page.date | date: date_format }}</div>
-    {%- if page.categories.size > 0 -%}
+    <div class="post-date">{{ page.date | date: "%Y.%m.%d" }}</div>
+    <!-- {%- if page.categories.size > 0 -%}
     <ul class="post-categories">
       {%- for tag in page.categories -%}
       <li>{{ tag }}</li>
       {%- endfor -%}
     </ul>
-    {%- endif -%}
+    {%- endif -%} -->
   </div>
+  <a class="post-link" href="{{ page.url | relative_url }}">
+    <h1 class="post-title mt1 mb4">{{ page.title | escape }}</h1>
+  </a>
   <div class="post">
     {{ content }}
   </div>
@@ -36,4 +36,4 @@ layout: default
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments
       powered by Disqus.</a></noscript>
   {%- endif -%}
-</div>
+</article>
