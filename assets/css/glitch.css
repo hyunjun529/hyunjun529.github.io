@@ -1,0 +1,52 @@
+/* 0 */
+
+.glitch-0 {
+    position: relative;
+}
+
+.glitch-0::before,
+.glitch-0::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.glitch-0::before {
+    pointer-events: none;
+    left: 1px;
+    background-color: rgba(183, 117, 191, 0.75);
+    mix-blend-mode: multiply;
+    animation: glitch-anim 1s infinite linear alternate-reverse;
+}
+
+.glitch-0::after {
+    pointer-events: none;
+    left: -1px;
+    background-color: rgba(109, 86, 191, 0.75);
+    mix-blend-mode: multiply;
+    animation: glitch-anim 2s infinite linear alternate-reverse;
+}
+
+@keyframes glitch-anim {
+    0% {
+        clip-path: inset(40% 0 61% 0);
+    }
+    20% {
+        clip-path: inset(92% 0 1% 0);
+    }
+    40% {
+        clip-path: inset(43% 0 1% 0);
+    }
+    60% {
+        clip-path: inset(25% 0 58% 0);
+    }
+    80% {
+        clip-path: inset(54% 0 7% 0);
+    }
+    100% {
+        clip-path: inset(58% 0 43% 0);
+    }
+}

@@ -1,18 +1,18 @@
-<div class="flex flex-column pv5 mt3 outline">
+<!--
+<div class="flex flex-column ba b--light-purple vh-25 br4">
   <div class="w-100">
-    <code>1</code>
-  </div>
-  <div class="w-100">
-    {%- if site.vaporwave.navigation -%}
-    <nav class="navigation">
-      <ul>
-        {% for link in site.vaporwave.navigation %}
-        <li>
-          <a href="{{ link.url }}">{{ link.title }}</a>
-        </li>
-        {% endfor %}
-      </ul>
-    </nav>
-    {%- endif -%}
   </div>
 </div>
+-->
+{% if site.vaporwave.search %}
+<div class="posts-labelgroup" id="posts-labelgroup">
+  <div class="search-container">
+    <div class="search-section">
+      <i class="icon-search"></i>
+      <input type="text" name="search" id="searchbar" autocomplete="off" aria-label="search in posts">
+    </div>
+    <div class="search-results" id="search-results" data-placeholder="No Results" style="display: none;"></div>
+  </div>
+</div>
+<h1 id="posts-label"></h1>
+{% endif %}
