@@ -1,0 +1,21 @@
+<div class="flex items-center grow">
+  <a href="{{ "/" | relative_url}}">
+    <img class="br-100 pa1 ba b--black-10 h3 w3 mw3 mh3" 
+      src="{{site.baseurl }}/{{ site.vaporwave.profile_image }}"
+      alt="{{ site.vaporwave.name }}">
+  </a>
+</div>
+
+<div class="flex flex-column">
+  <div class="w-100">
+    <h2 class="mv0">
+      <a href="{{ "/about" | relative_url }}">{{ site.vaporwave.name }}</a>
+    </h2>
+  </div>
+  <div class="w-100 mt2">
+    <p class="ma0">{{ site.vaporwave.tagline }}</p>
+  </div>
+  <div class="w-100 mt3">
+    {%- include social.html -%}
+  </div>
+</div>

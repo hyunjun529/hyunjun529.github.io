@@ -4,11 +4,8 @@ title: About
 permalink: /about/
 ---
 
+<center>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/e9Pq4g-rb4M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="400" height="400" src="https://www.youtube.com/embed/H2odUk7WyEg?autoplay=1&color=white&controls=0&disablekb&fs&iv_load_policy=3&loop=1&playsinline" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
 
-
-- [site](https://p316.net)
-- [twitter](https://mobile.twitter.com/zaq1qaz)
-- [youtube](https://youtube.com/channel/UCPwsgRyz60XPg8yGJ5HalVA)
-- [twitch](https://twitch.tv/zaq1qaz)
+</center>
